@@ -45,5 +45,15 @@ for i in range(10000):
     loss.backward()
     optimizer.step()
 out=net(input_x)
-print(out)
-print(y)
+
+t = 0
+right = 0
+wrong = 0
+for i in out:
+	print(round(i.item()),y[t].item())
+	if round(i.item())==round(y[t].item()):
+		right+=1
+	else:
+		wrong+=1
+	t+=1
+print(right,wrong)
