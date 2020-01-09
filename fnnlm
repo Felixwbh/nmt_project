@@ -1,0 +1,39 @@
+默认参数：
+-fnnlm 
+-dev 0
+-lrate 0.01
+-wbatch 128 
+-minmax 0.1
+-nepoch 5
+-n 3
+-hdepth 1
+-hsize 128
+-esize 100 
+-train data/wsj.train 
+-test data/wsj.test 
+-output work/wsj.prob 
+-vsize 10000
+-model work/wsj.model
+-autodiff
+结果截图：
+ picture1
+新参数：
+-fnnlm 
+-dev 0
+-lrate 0.0056
+-wbatch 256
+-minmax 0.1
+-nepoch 7
+-n 4
+-hdepth 1
+-hsize 128
+-esize 90
+-train data/wsj.train 
+-test data/wsj.test 
+-output work/wsj.prob 
+-vsize 10000
+-model work/wsj.model
+-autodiff
+结果截图：
+ picture2
+通过对lrate、wbatch、minmax、nepoch、n、hdepth、hsize、esize、vsize九个参数进行五十次调参，得到最终结果。
