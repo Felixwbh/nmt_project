@@ -3,4 +3,4 @@
 
 fnnlm 233.15->207.76
 
-xor xor.py
+xor xor.py 正确率75%
